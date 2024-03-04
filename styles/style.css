@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Delius;
+    src: url('./fonts/Delius-Regular.ttf');
+}
+
+@font-face {
+    font-family: LaBelleAurore;
+    src: url('./fonts/LaBelleAurore-Regular.ttf');
+}
+
+*{
+    font-family: 'Delius', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    font-size: 15px;
+
+    --c1: darkorchid;
+    --c2: darkorchid;
+}
+
+body {
+    background-color: var(--c1);
+}
+
+#navbar {
+    background-color: var(--c2);
+    width: auto;
+    padding: 5px 10px 5px 10px;
+
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    margin: 0 10px 0 10px;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.content {
+    padding: 0 10px 0 10px;
+}
+
+/* .buttons {
+    color: white;
+    background-color: darkorchid;
+    border: 2px white solid;
+} */

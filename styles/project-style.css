@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Delius;
+    src: url('./fonts/Delius-Regular.ttf');
+}
+
+:root {
+    font-size: 15px;
+    
+    --primary: lightBlue;
+    --secondary: #fff;
+
+    color: var(--secondary);
+}
+
+*{
+    font-family: 'Delius', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--secondary);
+}
+
+body{
+    background-color: var(--primary);
+}
+
+/* Generic Classes */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Specific Classes */
+
+.page-num {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+    width: 60px;
+}
+
+/* .page-nav{
+    width: auto;
+} */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: auto;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#navbar .left-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    font-size: 12px;
+
+    width: 40%;
+}
+
+#navbar .left-nav-container img {
+    width: 50px;
+}
+
+#navbar .hamburger-button {
+   background: none;
+   border: none;
+}
+
+#navbar .hamburger-button:hover {
+    cursor:pointer
+ }
+
+.arrow-button {
+    background: none;
+    border: none;
+}
+
+.arrow-button:hover {
+    cursor: pointer;
+ }
+
+ .arrow-button:hover img {
+    background-color:aquamarine
+}
+
+/* #navbar .hamburger-button img {
+
+ } */
