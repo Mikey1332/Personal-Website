@@ -14,8 +14,8 @@
 }
 
 *{
-    font-family: 'Delius', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--secondary);
+    font-family: 'Delius', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
@@ -35,12 +35,18 @@ body{
 /* Specific Classes */
 
 #sidebar-nav {
-    position: absolute;
-    right: 0;
-    width: 35%;
+    position: fixed;
+    right: -150px;
+    width: 150px;
     height: 100%;
     background-color: var(--tertiary);
     z-index: 10;
+
+    transition: all ease-in-out 0.5s;
+}
+
+#sidebar-nav.sidebar-shown {
+    right: 0px;
 }
 
 #sidebar-nav>button {
@@ -153,3 +159,5 @@ body{
 /* #navbar .hamburger-button img {
 
  } */
+
+ /* ANIMATIONS */
