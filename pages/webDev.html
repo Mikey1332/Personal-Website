@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+    <link rel="stylesheet" href="../styles/project-style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <!-- <ul style="list-style-type: square;">
+        <li>Jake</li>
+        <li>Nick</li>
+        <li>Alec</li>
+        <li>Aaron</li>
+    </ul>
+    <ol style="list-style-type: upper-roman;">
+        <li>Carrots</li>
+        <li>Milk</li>
+        <li>Cheese</li>
+    </ol> -->
+
+    <div class="" id="sidebar-nav">
+        <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
+        <div class="flex-column">
+            <a href="./about.html"><Button>About Me</Button></a>
+            <a href="./projectList.html">
+                <Button class ="flex-row">
+                    <img src="../icons/arrowLeft.svg" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+                    My Projects
+                </Button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><Button>Special</Button></a>
+        </div>
+    </div>
+
+    <div id="projects-nav" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+        <div class="flex-column">
+            <a href="./arduino.html"><Button>Arduino</Button></a>
+            <a href="./about.html"><Button>Option 2</Button></a>
+            <a href="./webDev.html"><Button>Web Dev</Button></a>
+        </div>
+    </div>
+
+    <div class="flex-row" id="navbar">
+        <div class = "left-nav-container">
+            <a href = "projectList.html">
+                <button class="hamburger-button"><img src="../icons/backArrow.svg" height="30"></button>
+            </a>
+        </div>
+        <div>
+            <button class ="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        </div>
+    </div>
+
+    <div class="flex-row">
+        <h1>
+            Web Development
+        </h1>
+    </div>
+
+    <div class ="section-1 flex-column">
+        <h3 class="project-title">
+            My Website
+        </h3>
+        <p class="description">
+            I created a Website to show off all my projects and learn about how to write html, css, and javascript. In the process of learning how to make this wesbite, I learned how to use GitHub, an online software development platform that helps people collaborate on coding projects and keep my personal code organized and up to date. This is the website.
+        </p>
+        <marquee>
+            <img src=>
+            <img src=>
+            <img src=>
+        </marquee>
+    </div>
+</body>
+</html>

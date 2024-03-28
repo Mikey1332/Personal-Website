@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../styles/about.css"/>
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <div class="" id="sidebar-nav">
+        <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
+        <div class="flex-column">
+            <a href="./about.html"><Button>About and Contacts</Button></a>
+            <a href="./projectList.html">
+                <Button class ="flex-row">
+                    <img src="../icons/arrowLeft.svg" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+                    My Projects
+                </Button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><Button>Special</Button></a>
+        </div>
+    </div>
+
+    <div id="projects-nav" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+        <div class="flex-column">
+            <a href="./arduino.html"><Button>Arduino</Button></a>
+            <a href="./about.html"><Button>Option 2</Button></a>
+            <a href="./webDev.html"><Button>Web Dev</Button></a>
+        </div>
+    </div>
+
+    <div class="flex-row" id="navbar">
+        <div class = "left-nav-container">
+            <a href = "./frontPage.html">
+                <button class="hamburger-button"><img src="../icons/backArrow.svg" height="30"></button>
+            </a>
+        </div>
+        <div>
+            <button class ="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        </div>
+    </div>
+    <div class="about-section">
+        <h1>About Me</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+    
+    <div class="contactBox">
+        <h2>Michael Kroner</h2>
+        <p class="title">Pascack Hills High School</p>
+        <p>123-456-7890</p>
+        <p>mkroner24@pascack.org</p>
+        <p><a href="mailto:mkroner24@pascack.org"><button class="button">Contact</button></a></p>
+    </div>
+</body>
+</html>

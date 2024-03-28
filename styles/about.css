@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #682640;
+    color: white;
+  }
+  
+  .contactBox {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px 16px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  #sidebar-nav {
+    position: fixed;
+    right: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: #add8e6;
+    z-index: 10;
+
+    transition: all ease-in-out 0.5s;
+}
+
+#sidebar-nav.sidebar-shown {
+    right: 0px;
+}
+
+#sidebar-nav>button { /* Close button */
+    margin-left:85%;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#sidebar-nav div button { /* Options */
+    border: 2px solid black;
+    color: black;
+    background: none;
+    /* margin: 10px 0 10px 0; */
+    width:150px;
+    height:30px;
+}
+
+#sidebar-nav button:hover {
+    cursor:pointer;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#sidebar-nav img:hover {
+    cursor: pointer;
+    background-color: rgba(71, 237, 237, 0.667);;
+}
+
+#projects-nav {
+    position: fixed;
+    right: -75px;
+    margin-top: 70px;
+    width: 75px;
+    height: 90px;
+    background-color: rgb(177, 232, 232);
+    z-index: 10;
+
+    /* transition: all ease-in-out 0.5s; */
+}
+
+#projects-nav.sidebar-shown {
+    right: 0px;
+}
+
+#projects-nav>button { /* Close button */
+    margin-left:85%;
+    margin-top: 10px;
+    width: 75px;
+    height: 30px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#projects-nav div button { /* Options */
+    border: 2px solid black;
+    color: black;
+    background: none;
+    /* margin: 10px 0 10px 0; */
+    width:75px;
+    height:30px;
+}
+
+#projects-nav button:hover {
+    cursor:pointer;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#projects-nav img:hover {
+    padding: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: red;
+}
+
+#projects-nav.projects-shown {
+    right: 140px;
+}
+
+#navbar {
+    background-color: #682640;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: auto;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#navbar .left-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* color:plum; */
+}
+
+#navbar .left-nav-container img {
+    width: 100%;
+}
+
+#navbar .hamburger-button {
+   background: none;
+   border: none;
+}
+
+#navbar .hamburger-button:hover {
+    cursor:pointer
+}

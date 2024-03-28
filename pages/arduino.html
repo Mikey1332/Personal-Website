@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino</title>
+    <link rel="stylesheet" href="../styles/project-style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <!-- <ul style="list-style-type: square;">
+        <li>Jake</li>
+        <li>Nick</li>
+        <li>Alec</li>
+        <li>Aaron</li>
+    </ul>
+    <ol style="list-style-type: upper-roman;">
+        <li>Carrots</li>
+        <li>Milk</li>
+        <li>Cheese</li>
+    </ol> -->
+
+    <div class="" id="sidebar-nav">
+        <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
+        <div class="flex-column">
+            <a href="./about.html"><Button>About Me</Button></a>
+            <a href="./projectList.html">
+                <Button class ="flex-row">
+                    <img src="../icons/arrowLeft.svg" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+                    My Projects
+                </Button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><Button>Special</Button></a>
+        </div>
+    </div>
+
+    <div id="projects-nav" onmouseover="projectsNavOn()" onmouseleave="projectsNavOff()">
+        <div class="flex-column">
+            <a href="./arduino.html"><Button>Arduino</Button></a>
+            <a href="./about.html"><Button>Option 2</Button></a>
+            <a href="./webDev.html"><Button>Web Dev</Button></a>
+        </div>
+    </div>
+
+    <div class="flex-row" id="navbar">
+        <div class = "left-nav-container">
+            <a href = "projectList.html">
+                <button class="hamburger-button"><img src="../icons/backArrow.svg" height="30"></button>
+            </a>
+        </div>
+        <div>
+            <button class ="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        </div>
+    </div>
+
+    <div class="flex-row">
+        <div class="project-title">
+            <h1>
+                Arduino
+            </h1>
+        </div>
+        <div class="page-nav flex-row">
+            <button class ="arrow-button" onclick="prevPage()"><img src="../icons/arrowLeft.svg"></button>
+
+            <p><span id="current-page">1</span> / <span id="total-pages">3</span></p>
+            
+            <button class ="arrow-button" onclick="nextPage()"><img src="../icons/arrowRight.svg"></button>
+        </div>
+    </div>
+
+    <div class="page" id ="page-0">
+        <div class ="section-1 flex-column">
+            <h3 class="project-title">
+                Infrared Remote
+            </h3>
+            <p class="description">
+                The Arduino Infrared Remote is a great way to control devices wirelessly. My fellow classmates created an arduino vehicle but didn't have a pratical way of controlling it. That's why I made the vehicle compatible with the Infarred Remote. The car detects the infrared signal it receives from the remote, and responds in accordance with the signal. For example, if it receives a “forward-signal” from the arduino remote, it will move forwards. The car can interpret signals for all of the following: Power, Forward, Backwards, Right, Left, Buzzer.
+            </p>
+            <marquee>
+                <img src="../img/Infrared Remote.png"  height="400">
+                <img src="../img/Whiteboard.png"  height="400">
+                <img src="../img/Infrared Reciever.png"  height="400">
+            </marquee>
+        </div>
+    </div>
+
+    <div class="page hidden" id ="page-1">
+        <div class ="section-1 flex-column">
+            <h3 class="project-title">
+                Display
+            </h3>
+            <p class="description">
+                A 7-segment display can show what the car's intentions are as it’s driving. If the car receives a signal to move forwards, the display will show an arrow pointing forwards to. There is a display for every function of the car.
+            </p>
+            <marquee>
+                <img src="">
+                <img src="">
+                <img src="">
+            </marquee>
+        </div>
+    </div>
+
+    <div class="page hidden" id ="page-2">
+        <div class ="section-1 flex-column">
+            <h3 class="project-title">
+                Syncing
+            </h3>
+            <p class="description">
+                Now with the sync animation that runs when the car boots on, you can now sync any infrared remote to the car. For example, the car will show the logo for the power button in a blinking animation on the 7-segment display. When this animation is running, the user can press a button on any infrared remote and the car will save that signal and run the power function whenever it receives that signal. This happens for every function on the car.
+            </p>
+            <marquee>
+                <img src="">
+                <img src="">
+                <img src="">
+            </marquee>
+        </div>
+    </div>
+</body>
+</html>

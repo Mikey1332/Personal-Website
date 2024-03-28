@@ -1,0 +1,269 @@
+:root{
+    background-color: darkorchid;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-size: 100vw;
+    background-position: fixed;
+    background-repeat: no-repeat;
+  
+    background-position-y: -5vw;
+    position: fixed; */
+}
+
+.project-image {
+    border-radius: 15%;
+    border: 2px solid black;
+
+    width: 250px;
+    height: auto;
+
+    margin: 3vw;
+
+    transition: width 0.3s;
+}
+
+
+.project-image:hover {
+    width: 275px;
+}
+
+.image-container {
+    /* width: 25%; */
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    text-align: center;
+    font-size: 10vw;
+
+    margin-top: 0;
+
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: auto;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#navbar .left-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#navbar .left-nav-container img {
+    width: 100%;
+}
+
+#navbar .hamburger-button {
+   background: none;
+   border: none;
+}
+
+#navbar .hamburger-button:hover {
+    cursor:pointer
+}
+
+/* #sidebar-nav {
+    position: fixed;
+    right: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: red;
+    z-index: 10;
+
+    transition: all ease-in-out 0.5s;
+}
+
+#sidebar-nav.sidebar-shown {
+    right: 0px;
+}
+
+#sidebar-nav-close {
+    background-color: red;
+}
+
+#sidebar-nav>button {
+    margin-left:85%;
+    margin-top: 10px;
+    width: 25px;
+    height: 30px;
+    padding: 0;
+
+        background: none;
+    border: none;
+}
+
+#sidebar-nav div button {
+    border: 2px solid black;
+    color: black;
+    background-color: red;
+        background: none;
+        margin: 10px 0 10px 0;
+    width:100%;
+    height:30px;
+}
+
+#sidebar-nav button:hover {
+    cursor:pointer;
+    background-color: orange;
+} */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sidebar-nav {
+    position: fixed;
+    right: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: #add8e6;
+    z-index: 10;
+
+    transition: all ease-in-out 0.5s;
+}
+
+#sidebar-nav.sidebar-shown {
+    right: 0px;
+}
+
+#sidebar-nav>button { /* Close button */
+    margin-left:85%;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#sidebar-nav div button { /* Options */
+    border: 2px solid black;
+    color: black;
+    background: none;
+    /* margin: 10px 0 10px 0; */
+    width:150px;
+    height:30px;
+}
+
+#sidebar-nav button:hover {
+    cursor:pointer;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#sidebar-nav img:hover {
+    cursor: pointer;
+    background-color: rgba(71, 237, 237, 0.667);;
+}
+
+#projects-nav {
+    position: fixed;
+    right: -75px;
+    margin-top: 70px;
+    width: 75px;
+    height: 90px;
+    background-color: rgb(177, 232, 232);
+    z-index: 10;
+
+    /* transition: all ease-in-out 0.5s; */
+}
+
+#projects-nav.sidebar-shown {
+    right: 0px;
+}
+
+#projects-nav>button { /* Close button */
+    margin-left:85%;
+    margin-top: 10px;
+    width: 75px;
+    height: 30px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#projects-nav div button { /* Options */
+    border: 2px solid black;
+    color: black;
+    background: none;
+    /* margin: 10px 0 10px 0; */
+    width:75px;
+    height:30px;
+}
+
+#projects-nav button:hover {
+    cursor:pointer;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#projects-nav img:hover {
+    padding: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: red;
+}
+
+#projects-nav.projects-shown {
+    right: 140px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: auto;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#navbar .left-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* color:plum; */
+}
+
+#navbar .left-nav-container img {
+    width: 100%;
+}
+
+#navbar .hamburger-button {
+   background: none;
+   border: none;
+}
+
+#navbar .hamburger-button:hover {
+    cursor:pointer
+}

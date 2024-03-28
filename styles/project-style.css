@@ -29,10 +29,21 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* justify-content: space-between; */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
 /* Specific Classes */
+
+#projectTitle{
+    padding:50px;
+}
 
 #sidebar-nav {
     position: fixed;
@@ -49,10 +60,10 @@ body{
     right: 0px;
 }
 
-#sidebar-nav>button {
+#sidebar-nav>button { /* Close button */
     margin-left:85%;
     margin-top: 10px;
-    width: 25px;
+    width: 150px;
     height: 30px;
     padding: 0;
 
@@ -60,18 +71,75 @@ body{
     border: none;
 }
 
-#sidebar-nav div button {
+#sidebar-nav div button { /* Options */
     border: 2px solid black;
     color: black;
     background: none;
     /* margin: 10px 0 10px 0; */
-    width:100%;
+    width:150px;
     height:30px;
 }
 
 #sidebar-nav button:hover {
     cursor:pointer;
-    background-color: #aeea;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#sidebar-nav img:hover {
+    cursor: pointer;
+    background-color: rgba(71, 237, 237, 0.667);;
+}
+
+#projects-nav {
+    position: fixed;
+    right: -75px;
+    margin-top: 70px;
+    width: 75px;
+    height: 90px;
+    background-color: rgb(177, 232, 232);
+    z-index: 10;
+
+    /* transition: all ease-in-out 0.5s; */
+}
+
+#projects-nav.sidebar-shown {
+    right: 0px;
+}
+
+#projects-nav>button { /* Close button */
+    margin-left:85%;
+    margin-top: 10px;
+    width: 75px;
+    height: 30px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#projects-nav div button { /* Options */
+    border: 2px solid black;
+    color: black;
+    background: none;
+    /* margin: 10px 0 10px 0; */
+    width:75px;
+    height:30px;
+}
+
+#projects-nav button:hover {
+    cursor:pointer;
+    background-color: rgba(71, 237, 237, 0.667);
+}
+
+#projects-nav img:hover {
+    padding: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: red;
+}
+
+#projects-nav.projects-shown {
+    right: 140px;
 }
 
 .page-num {
@@ -101,14 +169,11 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
-    font-size: 12px;
-
-    width: 40%;
+    /* color:plum; */
 }
 
 #navbar .left-nav-container img {
-    width: 50px;
+    width: 100%;
 }
 
 #navbar .hamburger-button {
@@ -118,7 +183,7 @@ body{
 
 #navbar .hamburger-button:hover {
     cursor:pointer
- }
+}
 
 .arrow-button {
     background: none;
@@ -137,17 +202,13 @@ body{
     margin: 0 50px 0 50px;
 }
 
-.page .year-range {
-    width:15%;
-}
-
 .page .project-title {
-    width:20%;
+    /* width:%; */
     font-size: 24px;
 }
 
 .page .description {
-    width:65%
+    width:100%;
 }
 
 /* IMPORTANT */
