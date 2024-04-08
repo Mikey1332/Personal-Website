@@ -60,13 +60,14 @@ body{
     right: 0px;
 }
 
-#sidebar-nav>button { /* Close button */
-    margin-left:85%;
-    margin-top: 10px;
-    width: 150px;
-    height: 30px;
-    padding: 0;
+#sidebar-nav-close {
+    background-color: red;
+}
 
+#sidebar-nav>button { /* Close button */
+    margin-left: 120px;
+    margin-top: 10px;
+    padding: 0;
     background: none;
     border: none;
 }
@@ -79,6 +80,7 @@ body{
     width:150px;
     height:30px;
 }
+
 
 #sidebar-nav button:hover {
     cursor:pointer;

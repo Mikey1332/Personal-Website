@@ -11,7 +11,7 @@ body {
     border: 2px solid black;
 
     width: 20vw;
-    height: auto;
+    height: 15vw;
 
     margin: 3vw;
 
@@ -20,6 +20,7 @@ body {
 
 .project-image:hover {
     width: 24vw;
+    height: 17vw
 }
 
 #header {
@@ -145,12 +146,9 @@ div.scroll-container {
 }
 
 #sidebar-nav>button { /* Close button */
-    margin-left:85%;
+    margin-left: 120px;
     margin-top: 10px;
-    width: 150px;
-    height: 30px;
     padding: 0;
-
     background: none;
     border: none;
 }
@@ -242,7 +240,7 @@ div.scroll-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* color:plum; */
+    color: white;
 }
 
 #navbar .left-nav-container img {

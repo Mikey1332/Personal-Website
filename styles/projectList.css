@@ -155,12 +155,9 @@
 }
 
 #sidebar-nav>button { /* Close button */
-    margin-left:85%;
+    margin-left: 120px;
     margin-top: 10px;
-    width: 150px;
-    height: 30px;
     padding: 0;
-
     background: none;
     border: none;
 }
